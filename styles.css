@@ -1,68 +1,120 @@
-html, body {
-    height: auto;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #111;
+    color: #ddd;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 15px 40px;
+}
+
+/* Logo varsa kullanılabilir */
+.logo {
+    height: 30px;
+}
+
+/* NAV MENÜ */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Menü öğeleri arası boşluk arttırıldı */
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;          /* Yazılar büyütüldü */
+    letter-spacing: 1px;      /* Harf aralığı açıldı */
+    padding: 10px 16px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
     color: #fff;
 }
 
-body.landing {
+/* SOSYAL LİNKLER */
+.social-icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    gap: 20px;
 }
 
+.social-icons a {
+    color: #888;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* GENEL YAPI */
 .container {
-    text-align: left;
     max-width: 800px;
-    width: 100%;
-    padding: 40px 20px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 60px 20px;
 }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    text-align: center;
+.logo-large {
+    display: block;
+    margin: 50px auto;
+    max-width: 400px;
 }
 
-.subtitle {
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: #ccc;
-    text-align: center;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
-
+/* BUTON */
 .button {
-    padding: 15px 25px;
-    background-color: #00bfff;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
     color: #000;
     text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
-    border-radius: 8px;
+    font-size: 15px;
     transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #00a3cc;
+    background-color: #ddd;
 }
 
-.policy {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 20px;
-    line-height: 1.6;
+/* OYUN HEADER GÖRSELİ */
+.game-header {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.hero-img {
+    width: 100%;
+    display: block;
+    margin: 0 auto 50px auto;
+    max-height: 200vh;
+    object-fit: cover;
+}
+
+/* HİKAYE ALANI */
+.story-section {
+    margin-top: 60px;
+}
+
+.story-section h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.no-top-padding {
+    padding-top: 0 !important;
 }
